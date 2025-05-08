@@ -33,14 +33,26 @@ struct MarkupsAndDocumentation: View {
                 showAlert.toggle()
             }))
             .alert(isPresented: $showAlert) {
-                getAlert(title: "This is alert")
+                getAlert(text: "This is alert")
             }
         }
     }
     
     // MARK: FUNCTIONS
-    func getAlert(title: String) -> Alert {
-        return Alert(title: Text(title))
+    
+    
+    /// Gets an alert with a specified title.
+    ///
+    /// This function creates and returns an alert immediately. The alert will have a title based on the text parametr but it will NOT have a message.
+    /// ```
+    /// getAlert(text: "Hello") -> Alert(title: Text("Hello")
+    /// ```
+    ///
+    /// - Warning: There is no additional message in this Alert.
+    /// - Parameter text: This is the title for the alert.
+    /// - Returns: Return an alert with a title.
+    func getAlert(text: String) -> Alert {
+        return Alert(title: Text(text))
     }
 }
 
