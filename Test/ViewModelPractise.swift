@@ -22,9 +22,9 @@ class PeopleViewModel: ObservableObject {
 //        getPeople()
 //    }
     func getPeople() {
-        let person1 = PersonModel(name: "Farida", surname: "Alibayova", age: 22)
-        let person2 = PersonModel(name: "Nurlan", surname: "Huseynov", age: 31)
-        let person3 = PersonModel(name: "Fidan", surname: "Ismayilova", age: 21)
+        let person1 = PersonModel(name: "Nigar", surname: "Zeynalova", age: 22)
+        let person2 = PersonModel(name: "Nazile", surname: "Huseynli", age: 31)
+        let person3 = PersonModel(name: "Ayla", surname: "Memmedova", age: 21)
         
         isLoading = true
         
